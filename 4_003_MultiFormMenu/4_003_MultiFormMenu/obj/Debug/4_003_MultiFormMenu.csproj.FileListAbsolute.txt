@@ -1,0 +1,5 @@
+C:\Users\p.racca.1368\Desktop\ICT\info\info-playground-raccaPaolo\4_003_MultiFormMenu\4_003_MultiFormMenu\obj\Debug\4_003_MultiFormMenu.csprojAssemblyReference.cache
+C:\Users\p.racca.1368\Desktop\ICT\info\info-playground-raccaPaolo\4_003_MultiFormMenu\4_003_MultiFormMenu\obj\Debug\_4_003_MultiFormMenu.Form1.resources
+C:\Users\p.racca.1368\Desktop\ICT\info\info-playground-raccaPaolo\4_003_MultiFormMenu\4_003_MultiFormMenu\obj\Debug\_4_003_MultiFormMenu.Form2.resources
+C:\Users\p.racca.1368\Desktop\ICT\info\info-playground-raccaPaolo\4_003_MultiFormMenu\4_003_MultiFormMenu\obj\Debug\_4_003_MultiFormMenu.Properties.Resources.resources
+C:\Users\p.racca.1368\Desktop\ICT\info\info-playground-raccaPaolo\4_003_MultiFormMenu\4_003_MultiFormMenu\obj\Debug\4_003_MultiFormMenu.csproj.GenerateResource.cache
