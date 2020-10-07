@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace _01_MultiForm
@@ -42,6 +35,24 @@ namespace _01_MultiForm
             Form2 f2p = new Form2(txtPassata);//new istanza l'oggetto
             f2p.Text = "Form con parametro";
             f2p.Show();
+        }
+
+        private void btnApriFormModale_Click(object sender, EventArgs e)
+        {
+            FormModale fm = new FormModale();
+            //MessageBox.Show(fm.ShowDialog()==DialogResult.OK? "Premuto OK": "Premuto Annulla");
+            if (fm.ShowDialog() == DialogResult.OK)//su ShowDialog() la Form si apre e resta in attesa
+            {
+                txtNomeFormMain.Text = fm.nome;
+                txtEtaFormMain.Text = fm.eta;
+                MessageBox.Show("Premuto OK");
+            }
+            else
+            {
+                txtNomeFormMain.Text = "";
+                txtEtaFormMain.Text = "";
+                MessageBox.Show("Premuto Annulla");
+            }
         }
     }
 }
