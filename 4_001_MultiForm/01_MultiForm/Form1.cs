@@ -29,7 +29,7 @@ namespace _01_MultiForm
             f2b.Text = "Form dinamica aperta";
             f2b.Show();
         }
-
+            
         private void btnPassaTxt_Click(object sender, EventArgs e)
         {
             Form2 f2p = new Form2(txtPassata);//new istanza l'oggetto

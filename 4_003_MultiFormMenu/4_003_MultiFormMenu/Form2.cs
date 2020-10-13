@@ -12,17 +12,13 @@ namespace _4_003_MultiFormMenu
 {
     public partial class Form2 : Form
     {
-        private int n;//visibile solo in form2
+        private int n;
+        private bool activate = false;
 
         private TextBox txt1;
         public Form2()
         {
             InitializeComponent();
-        }
-
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
         }
 
         /// <summary>
@@ -32,30 +28,43 @@ namespace _4_003_MultiFormMenu
         public Form2(int n)
         {
             InitializeComponent();
-            this.n = n;//this si riferisce all'oggetto di Form2, devo specificare per omonimia
+            this.n = n;
         }
 
         public Form2(TextBox txt1)
         {
             InitializeComponent();
-            this.txt1 = txt1;//this si riferisce all'oggetto di Form2, devo specificare per omonimia
+            activate = true;
+            this.txt1 = txt1;
         }
 
-        private void bnLeggiValore_Click(object sender, EventArgs e)
+
+        private void leggiValoreBtn_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Valore: " + n);
+            toolStripLbl.Text = "Lettura valore";
         }
 
-        private void btnInviaAF1_Click(object sender, EventArgs e)
+        private void inviaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            txt1.Text = txtForm2.Text;
+            
+            if (activate)
+            {
+                txt1.Text = txtValue.Text;
+            }
+            else
+            {
+                MessageBox.Show("Per passare un valore alla Form1 scegliere 'passa Txt a Forn2'");
+            }
+            toolStripLbl.Text = "Passaggio testo a Form1";
         }
 
-        private void btnFormFiglia_Click(object sender, EventArgs e)
+        private void apriFormFigliaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormFiglia f = new FormFiglia();//istanzio nuova form dinamica
-            this.AddOwnedForm(f);//this è Form2, alla quale aggiungo f come form figlia
+            FormFiglia f = new FormFiglia();//form dinamica
+            this.AddOwnedForm(f);
             f.Show();
+            toolStripLbl.Text = "Apertura Form Figlia";
         }
     }
 }
