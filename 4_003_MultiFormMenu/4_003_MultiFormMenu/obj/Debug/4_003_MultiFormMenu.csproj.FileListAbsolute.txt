@@ -15,3 +15,4 @@ C:\Users\paolo\Desktop\ICT\Quarta\info-playground-raccaPaolo\4_003_MultiFormMenu
 C:\Users\paolo\Desktop\ICT\Quarta\info-playground-raccaPaolo\4_003_MultiFormMenu\4_003_MultiFormMenu\obj\Debug\4_003_MultiFormMenu.pdb
 C:\Users\paolo\Desktop\ICT\Quarta\info-playground-raccaPaolo\4_003_MultiFormMenu\4_003_MultiFormMenu\obj\Debug\_4_003_MultiFormMenu.FormModale.resources
 C:\Users\paolo\Desktop\ICT\Quarta\info-playground-raccaPaolo\4_003_MultiFormMenu\4_003_MultiFormMenu\obj\Debug\_4_003_MultiFormMenu.FormFiglia.resources
+C:\Users\paolo\Desktop\ICT\Quarta\info-playground-raccaPaolo\4_003_MultiFormMenu\4_003_MultiFormMenu\obj\Debug\_4_003_MultiFormMenu.FormModalEsci.resources

@@ -29,5 +29,25 @@ namespace _4_003_MultiFormMenu
             nome = "";
             eta = "";
         }
+
+        private void lblNome_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtEta_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNome_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

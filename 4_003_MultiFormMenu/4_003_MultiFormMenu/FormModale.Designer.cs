@@ -64,6 +64,7 @@
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(100, 20);
             this.txtNome.TabIndex = 11;
+            this.txtNome.TextChanged += new System.EventHandler(this.txtNome_TextChanged);
             // 
             // lblNome
             // 
@@ -73,6 +74,7 @@
             this.lblNome.Size = new System.Drawing.Size(38, 13);
             this.lblNome.TabIndex = 10;
             this.lblNome.Text = "Nome:";
+            this.lblNome.Click += new System.EventHandler(this.lblNome_Click);
             // 
             // txtEta
             // 
@@ -80,6 +82,7 @@
             this.txtEta.Name = "txtEta";
             this.txtEta.Size = new System.Drawing.Size(100, 20);
             this.txtEta.TabIndex = 9;
+            this.txtEta.TextChanged += new System.EventHandler(this.txtEta_TextChanged);
             // 
             // label2
             // 
@@ -89,6 +92,7 @@
             this.label2.Size = new System.Drawing.Size(26, 13);
             this.label2.TabIndex = 8;
             this.label2.Text = "Età:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // FormModale
             // 

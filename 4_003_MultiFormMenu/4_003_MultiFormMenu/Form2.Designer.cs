@@ -35,6 +35,7 @@
             this.txtValue = new System.Windows.Forms.TextBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripLbl = new System.Windows.Forms.ToolStripStatusLabel();
+            this.esciToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -44,7 +45,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.leggiValoreBtn,
             this.inviaToolStripMenuItem,
-            this.apriFormFigliaToolStripMenuItem});
+            this.apriFormFigliaToolStripMenuItem,
+            this.esciToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -95,6 +97,15 @@
             this.toolStripLbl.Size = new System.Drawing.Size(43, 17);
             this.toolStripLbl.Text = "Pronto";
             // 
+            // esciToolStripMenuItem
+            // 
+            this.esciToolStripMenuItem.Name = "esciToolStripMenuItem";
+            this.esciToolStripMenuItem.ShortcutKeyDisplayString = "";
+            this.esciToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
+            this.esciToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
+            this.esciToolStripMenuItem.Text = "&Esci";
+            this.esciToolStripMenuItem.Click += new System.EventHandler(this.esciToolStripMenuItem_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -124,5 +135,6 @@
         private System.Windows.Forms.TextBox txtValue;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripLbl;
+        private System.Windows.Forms.ToolStripMenuItem esciToolStripMenuItem;
     }
 }

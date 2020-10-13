@@ -66,5 +66,16 @@ namespace _4_003_MultiFormMenu
             f.Show();
             toolStripLbl.Text = "Apertura Form Figlia";
         }
+
+        private void esciToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormModalEsci f = new FormModalEsci();
+            f.Text = "Uscire";
+            if (f.ShowDialog() == DialogResult.Yes)
+            {
+                Close();
+            }
+            toolStripLbl.Text = "Uscita";
+        }
     }
 }

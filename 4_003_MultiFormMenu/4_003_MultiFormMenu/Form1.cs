@@ -80,5 +80,16 @@ namespace _4_003_MultiFormMenu
             }
             toolStripLbl.Text = "Apertura Form modale";
         }
+
+        public void esciToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormModalEsci f = new FormModalEsci();
+            f.Text = "Uscire";
+            if (f.ShowDialog() == DialogResult.Yes)
+            {
+                Close();
+            }
+            toolStripLbl.Text = "Uscita";
+        }
     }
 }
