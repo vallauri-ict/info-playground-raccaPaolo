@@ -12,6 +12,7 @@ namespace _4_003_MultiFormMenu
 {
     public partial class Form1 : Form
     {
+        Point startPoint = new Point(100, 100);
         public Form1()
         {
             InitializeComponent();
@@ -26,6 +27,9 @@ namespace _4_003_MultiFormMenu
         private void passaTxtAFormToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form2 f2p = new Form2(txtInvia);//new istanza l'oggetto
+            f2p.MdiParent = this;
+            f2p.StartPosition = FormStartPosition.Manual;
+            f2p.Location = startPoint;
             f2p.Text = "Form con TextBox";
             f2p.Show();
         }
@@ -36,11 +40,17 @@ namespace _4_003_MultiFormMenu
             Form2 f2 = new Form2();
             f2.Text = "Form senza parametro";
             f2.Show();
+            f2.StartPosition = FormStartPosition.Manual;
+            f2.Location = startPoint;
+            f2.MdiParent = this;
 
             //form con parametro
             Form2 f2p = new Form2(10);
             f2p.Text = "Form con parametro";
             f2p.Show();
+            f2p.StartPosition = FormStartPosition.Manual;
+            f2p.Location = startPoint;
+            f2p.MdiParent = this;
 
             toolStripLbl.Text = "Apertura Form2";
         }
@@ -51,6 +61,9 @@ namespace _4_003_MultiFormMenu
             f2b.Text = "Form dinamica aperta";
             f2b.Show();
             toolStripLbl.Text = "Apertura Form Dinamica";
+            f2b.MdiParent = this;
+            f2b.StartPosition = FormStartPosition.Manual;
+            f2b.Location = startPoint;
         }
 
 
@@ -60,12 +73,18 @@ namespace _4_003_MultiFormMenu
             f2p.Text = "Form con parametro";
             f2p.Show();
             toolStripLbl.Text = "Apertura Form con Textbox";
+            f2p.MdiParent = this;
+            f2p.StartPosition = FormStartPosition.Manual;
+            f2p.Location = startPoint;
         }
 
 
         private void apriFormModaleToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormModale fm = new FormModale();
+            fm.MdiParent = this;
+            fm.StartPosition = FormStartPosition.Manual;
+            fm.Location = startPoint;
             if (fm.ShowDialog() == DialogResult.OK)
             {
                 txtNome.Text = fm.nome;
@@ -84,6 +103,7 @@ namespace _4_003_MultiFormMenu
         public void esciToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormModalEsci f = new FormModalEsci();
+            f.MdiParent = this;
             f.Text = "Uscire";
             if (f.ShowDialog() == DialogResult.Yes)
             {

@@ -34,6 +34,7 @@
             this.apriForm2BToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.passaTxtAFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.apriFormModaleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.esciToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripLbl = new System.Windows.Forms.ToolStripStatusLabel();
             this.label1 = new System.Windows.Forms.Label();
@@ -42,7 +43,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.lblNome = new System.Windows.Forms.Label();
-            this.esciToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -72,30 +72,38 @@
             // apriForm2ToolStripMenuItem
             // 
             this.apriForm2ToolStripMenuItem.Name = "apriForm2ToolStripMenuItem";
-            this.apriForm2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.apriForm2ToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.apriForm2ToolStripMenuItem.Text = "Apri Form &2";
             this.apriForm2ToolStripMenuItem.Click += new System.EventHandler(this.apriForm2ToolStripMenuItem_Click);
             // 
             // apriForm2BToolStripMenuItem
             // 
             this.apriForm2BToolStripMenuItem.Name = "apriForm2BToolStripMenuItem";
-            this.apriForm2BToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.apriForm2BToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.apriForm2BToolStripMenuItem.Text = "Apri Form 2&B";
             this.apriForm2BToolStripMenuItem.Click += new System.EventHandler(this.apriForm2BToolStripMenuItem_Click);
             // 
             // passaTxtAFormToolStripMenuItem
             // 
             this.passaTxtAFormToolStripMenuItem.Name = "passaTxtAFormToolStripMenuItem";
-            this.passaTxtAFormToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.passaTxtAFormToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.passaTxtAFormToolStripMenuItem.Text = "Passa &Txt a Form2";
             this.passaTxtAFormToolStripMenuItem.Click += new System.EventHandler(this.passaTxtAFormToolStripMenuItem_Click);
             // 
             // apriFormModaleToolStripMenuItem
             // 
             this.apriFormModaleToolStripMenuItem.Name = "apriFormModaleToolStripMenuItem";
-            this.apriFormModaleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.apriFormModaleToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.apriFormModaleToolStripMenuItem.Text = "Apri Form &Modale";
             this.apriFormModaleToolStripMenuItem.Click += new System.EventHandler(this.apriFormModaleToolStripMenuItem_Click);
+            // 
+            // esciToolStripMenuItem
+            // 
+            this.esciToolStripMenuItem.Name = "esciToolStripMenuItem";
+            this.esciToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
+            this.esciToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
+            this.esciToolStripMenuItem.Text = "&Esci";
+            this.esciToolStripMenuItem.Click += new System.EventHandler(this.esciToolStripMenuItem_Click);
             // 
             // statusStrip1
             // 
@@ -162,14 +170,6 @@
             this.lblNome.TabIndex = 6;
             this.lblNome.Text = "Nome:";
             // 
-            // esciToolStripMenuItem
-            // 
-            this.esciToolStripMenuItem.Name = "esciToolStripMenuItem";
-            this.esciToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.esciToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
-            this.esciToolStripMenuItem.Text = "&Esci";
-            this.esciToolStripMenuItem.Click += new System.EventHandler(this.esciToolStripMenuItem_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -183,9 +183,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Form1";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
