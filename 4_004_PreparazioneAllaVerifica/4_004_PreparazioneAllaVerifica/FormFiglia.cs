@@ -12,8 +12,23 @@ namespace _4_004_PreparazioneAllaVerifica
 {
     public partial class FormFiglia : Form
     {
-        public TextBox txt1;
-        public string value;
+        private TextBox txtPadre;
+        private string txtValue;
+
+        public FormFiglia(TextBox txtPadre)
+        {
+            InitializeComponent();//da aggiungere sempre quando creo costruttore
+            this.txtPadre = txtPadre;
+        }
+
+        public string TxtValue
+        {
+            get => txtValue;
+            set {
+                txtValue = value;
+                txtStringaFiglia.Text = txtValue;
+            }
+        }
 
         public FormFiglia()
         {
@@ -23,18 +38,7 @@ namespace _4_004_PreparazioneAllaVerifica
 
         private void btnInviaStringa_Click(object sender, EventArgs e)
         {
-            formMain.txtPassata.Text = txtStringaFiglia.Text;
+            txtPadre.Text = txtStringaFiglia.Text;
         }
-
-        private void FormFiglia_Load(object sender, EventArgs e)
-        {
-            txt1= txtStringaFiglia;
-        }
-
-
-        //public void cambiaTesto()
-        //{
-        //    formMain.txtPassata = txt1;
-        //}
     }
 }

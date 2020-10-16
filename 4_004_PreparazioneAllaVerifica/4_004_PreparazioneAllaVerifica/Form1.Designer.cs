@@ -234,7 +234,6 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "formMain";
             this.Text = "Racca Paolo";
-            this.Load += new System.EventHandler(this.formMain_Load);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);

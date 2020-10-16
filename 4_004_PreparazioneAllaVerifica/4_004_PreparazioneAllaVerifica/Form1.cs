@@ -13,9 +13,8 @@ namespace _4_004_PreparazioneAllaVerifica
 {
     public partial class formMain : Form
     {
-        //public static TextBox txtPassata;
-        public FormFiglia ff=new FormFiglia();
-        public static TextBox txtPassata;
+        public FormFiglia ff;
+
         public formMain()
         {
             InitializeComponent();
@@ -83,6 +82,8 @@ namespace _4_004_PreparazioneAllaVerifica
 
         private void formFigliaToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //passo la txt alla form figlia
+            ff= new FormFiglia(txtStringa);
             ff.Show();
         }
 
@@ -92,12 +93,8 @@ namespace _4_004_PreparazioneAllaVerifica
 
         private void btnInviaStringa_Click(object sender, EventArgs e)
         {
-            ff.txt1.Text = txtStringa.Text;
+            ff.TxtValue = txtStringa.Text;//richiama il set di TxtValue
         }
 
-        private void formMain_Load(object sender, EventArgs e)
-        {
-            txtPassata = txtStringa;
-        }
     }
 }
