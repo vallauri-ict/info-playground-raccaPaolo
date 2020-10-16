@@ -98,5 +98,9 @@ namespace _4_004_PreparazioneAllaVerifica
             ff.TxtValue = txtStringa.Text;//richiama il set di TxtValue
         }
 
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Racca Paolo ©\nProject finished on 16/10/2020");
+        }
     }
 }

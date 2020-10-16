@@ -48,6 +48,7 @@
             this.btnInviaStringa = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.txtStringa = new System.Windows.Forms.TextBox();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -77,7 +78,8 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem});
+            this.fileToolStripMenuItem,
+            this.toolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -109,28 +111,28 @@
             // form2ToolStripMenuItem
             // 
             this.form2ToolStripMenuItem.Name = "form2ToolStripMenuItem";
-            this.form2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.form2ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.form2ToolStripMenuItem.Text = "Form&2";
             this.form2ToolStripMenuItem.Click += new System.EventHandler(this.form2ToolStripMenuItem_Click);
             // 
             // formDinamicaToolStripMenuItem
             // 
             this.formDinamicaToolStripMenuItem.Name = "formDinamicaToolStripMenuItem";
-            this.formDinamicaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.formDinamicaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.formDinamicaToolStripMenuItem.Text = "Form&Dinamica";
             this.formDinamicaToolStripMenuItem.Click += new System.EventHandler(this.formDinamicaToolStripMenuItem_Click);
             // 
             // formFigliaToolStripMenuItem
             // 
             this.formFigliaToolStripMenuItem.Name = "formFigliaToolStripMenuItem";
-            this.formFigliaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.formFigliaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.formFigliaToolStripMenuItem.Text = "FormFigli&a";
             this.formFigliaToolStripMenuItem.Click += new System.EventHandler(this.formFigliaToolStripMenuItem_Click);
             // 
             // formMDIToolStripMenuItem
             // 
             this.formMDIToolStripMenuItem.Name = "formMDIToolStripMenuItem";
-            this.formMDIToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.formMDIToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.formMDIToolStripMenuItem.Text = "Form&MDI";
             this.formMDIToolStripMenuItem.Click += new System.EventHandler(this.formMDIToolStripMenuItem_Click);
             // 
@@ -216,6 +218,13 @@
             this.txtStringa.Size = new System.Drawing.Size(100, 20);
             this.txtStringa.TabIndex = 8;
             // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(24, 20);
+            this.toolStripMenuItem1.Text = "&?";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            // 
             // formMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -264,6 +273,7 @@
         private System.Windows.Forms.Button btnInviaStringa;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtStringa;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
     }
 }
 
