@@ -64,12 +64,13 @@ namespace _4_004_PreparazioneAllaVerifica
                 MessageBox.Show("Nome:" + f2.nome + "\nEtà:" + f2.eta);
                 txtEta.Text = f2.eta;
                 txtNome.Text = f2.nome;
+                toolStripStatusLabel1.Text = "File/ApriForm2/Ok";
             }
             else
             {
                 MessageBox.Show("Operazione annullata");
+                toolStripStatusLabel1.Text = "File/ApriForm2/Annulla";
             }
-            toolStripStatusLabel1.Text = "File/ApriForm2";
         }
 
         private void formDinamicaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -85,12 +86,14 @@ namespace _4_004_PreparazioneAllaVerifica
             //passo la txt alla form figlia
             ff= new FormFiglia(txtStringa);
             ff.Show();
+            toolStripStatusLabel1.Text = "File/ApriFormFiglia";
         }
 
         private void formMDIToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormMdiParent fmp = new FormMdiParent();
             fmp.Show();
+            toolStripStatusLabel1.Text = "File/FormMDI";
         }
 
         private void btnInviaStringa_Click(object sender, EventArgs e)
@@ -100,7 +103,8 @@ namespace _4_004_PreparazioneAllaVerifica
 
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Racca Paolo ©\nProject finished on 16/10/2020");
+            MessageBox.Show("Racca Paolo ©\nProject finished on 16/10/2020","?");
+            toolStripStatusLabel1.Text = "?";
         }
     }
 }
