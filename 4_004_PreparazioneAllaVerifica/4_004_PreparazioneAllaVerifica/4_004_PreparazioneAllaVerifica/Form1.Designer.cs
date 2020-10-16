@@ -103,48 +103,48 @@
             this.formFigliaToolStripMenuItem,
             this.formMDIToolStripMenuItem});
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.newToolStripMenuItem.Text = "&New";
             // 
             // form2ToolStripMenuItem
             // 
             this.form2ToolStripMenuItem.Name = "form2ToolStripMenuItem";
-            this.form2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.form2ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.form2ToolStripMenuItem.Text = "Form&2";
             this.form2ToolStripMenuItem.Click += new System.EventHandler(this.form2ToolStripMenuItem_Click);
             // 
             // formDinamicaToolStripMenuItem
             // 
             this.formDinamicaToolStripMenuItem.Name = "formDinamicaToolStripMenuItem";
-            this.formDinamicaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.formDinamicaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.formDinamicaToolStripMenuItem.Text = "Form&Dinamica";
             this.formDinamicaToolStripMenuItem.Click += new System.EventHandler(this.formDinamicaToolStripMenuItem_Click);
             // 
             // formFigliaToolStripMenuItem
             // 
             this.formFigliaToolStripMenuItem.Name = "formFigliaToolStripMenuItem";
-            this.formFigliaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.formFigliaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.formFigliaToolStripMenuItem.Text = "FormFigli&a";
             this.formFigliaToolStripMenuItem.Click += new System.EventHandler(this.formFigliaToolStripMenuItem_Click);
             // 
             // formMDIToolStripMenuItem
             // 
             this.formMDIToolStripMenuItem.Name = "formMDIToolStripMenuItem";
-            this.formMDIToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.formMDIToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.formMDIToolStripMenuItem.Text = "Form&MDI";
             this.formMDIToolStripMenuItem.Click += new System.EventHandler(this.formMDIToolStripMenuItem_Click);
             // 
             // loadToolStripMenuItem
             // 
             this.loadToolStripMenuItem.Name = "loadToolStripMenuItem";
-            this.loadToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.loadToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.loadToolStripMenuItem.Text = "&Load";
             this.loadToolStripMenuItem.Click += new System.EventHandler(this.loadToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.saveToolStripMenuItem.Text = "&Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
@@ -152,7 +152,7 @@
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.exitToolStripMenuItem.Text = "&Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -234,6 +234,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "formMain";
             this.Text = "Racca Paolo";
+            this.Load += new System.EventHandler(this.formMain_Load);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);

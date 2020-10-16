@@ -15,21 +15,26 @@ namespace _4_004_PreparazioneAllaVerifica
         public TextBox txt1;
         public string value;
 
-        public FormFiglia(TextBox txtStringa)
+        public FormFiglia()
         {
             InitializeComponent();
-            txt1 = txtStringa;
+
         }
 
         private void btnInviaStringa_Click(object sender, EventArgs e)
         {
-            txt1.Text = txtStringaFiglia.Text;
+            formMain.txtPassata.Text = txtStringaFiglia.Text;
+        }
+
+        private void FormFiglia_Load(object sender, EventArgs e)
+        {
+            txt1= txtStringaFiglia;
         }
 
 
-        //public void cambiaTesto(string testo)
+        //public void cambiaTesto()
         //{
-        //    txtStringaFiglia.Text = ;
+        //    formMain.txtPassata = txt1;
         //}
     }
 }
