@@ -89,6 +89,8 @@ namespace _4_004_PreparazioneAllaVerifica
 
         private void formMDIToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            FormMdiParent fmp = new FormMdiParent();
+            fmp.Show();
         }
 
         private void btnInviaStringa_Click(object sender, EventArgs e)

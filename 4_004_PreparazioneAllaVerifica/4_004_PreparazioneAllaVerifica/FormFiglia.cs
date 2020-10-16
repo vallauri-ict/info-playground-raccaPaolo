@@ -21,6 +21,7 @@ namespace _4_004_PreparazioneAllaVerifica
             this.txtPadre = txtPadre;
         }
 
+        //property
         public string TxtValue
         {
             get => txtValue;
