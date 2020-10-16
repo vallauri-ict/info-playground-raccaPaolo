@@ -1,4 +1,4 @@
-# Es. 4_401_MultiFormMenu
-Realizzare un' Applicazione Windows Form dove inserire gli esercizi dell' Es. 4_001_Multiform in un toolStripMenù e inserire un ToolStripStatus.
+# Es. 4_004_PreparazioneAllaVerifica
+Realizzare un' Applicazione Windows Form dove gestire i vari tipi di Form viste in classe, utilizzando un toolStripMenù e un ToolStripStatus.
 
 _Racca Paolo_
