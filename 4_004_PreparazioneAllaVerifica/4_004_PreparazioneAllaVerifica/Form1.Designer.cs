@@ -41,6 +41,7 @@
             this.loadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.txtEta = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
@@ -48,7 +49,6 @@
             this.btnInviaStringa = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.txtStringa = new System.Windows.Forms.TextBox();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -111,28 +111,28 @@
             // form2ToolStripMenuItem
             // 
             this.form2ToolStripMenuItem.Name = "form2ToolStripMenuItem";
-            this.form2ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.form2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.form2ToolStripMenuItem.Text = "Form&2";
             this.form2ToolStripMenuItem.Click += new System.EventHandler(this.form2ToolStripMenuItem_Click);
             // 
             // formDinamicaToolStripMenuItem
             // 
             this.formDinamicaToolStripMenuItem.Name = "formDinamicaToolStripMenuItem";
-            this.formDinamicaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.formDinamicaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.formDinamicaToolStripMenuItem.Text = "Form&Dinamica";
             this.formDinamicaToolStripMenuItem.Click += new System.EventHandler(this.formDinamicaToolStripMenuItem_Click);
             // 
             // formFigliaToolStripMenuItem
             // 
             this.formFigliaToolStripMenuItem.Name = "formFigliaToolStripMenuItem";
-            this.formFigliaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.formFigliaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.formFigliaToolStripMenuItem.Text = "FormFigli&a";
             this.formFigliaToolStripMenuItem.Click += new System.EventHandler(this.formFigliaToolStripMenuItem_Click);
             // 
             // formMDIToolStripMenuItem
             // 
             this.formMDIToolStripMenuItem.Name = "formMDIToolStripMenuItem";
-            this.formMDIToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.formMDIToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.formMDIToolStripMenuItem.Text = "Form&MDI";
             this.formMDIToolStripMenuItem.Click += new System.EventHandler(this.formMDIToolStripMenuItem_Click);
             // 
@@ -157,6 +157,14 @@
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "&Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D4)));
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(24, 20);
+            this.toolStripMenuItem1.Text = "&?";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // txtEta
             // 
@@ -217,13 +225,6 @@
             this.txtStringa.Name = "txtStringa";
             this.txtStringa.Size = new System.Drawing.Size(100, 20);
             this.txtStringa.TabIndex = 8;
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(24, 20);
-            this.toolStripMenuItem1.Text = "&?";
-            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // formMain
             // 

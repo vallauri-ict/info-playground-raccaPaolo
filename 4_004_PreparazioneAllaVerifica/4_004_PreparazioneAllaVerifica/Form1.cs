@@ -85,6 +85,7 @@ namespace _4_004_PreparazioneAllaVerifica
         {
             //passo la txt alla form figlia
             ff= new FormFiglia(txtStringa);
+            this.AddOwnedForm(ff);
             ff.Show();
             toolStripStatusLabel1.Text = "File/ApriFormFiglia";
         }
