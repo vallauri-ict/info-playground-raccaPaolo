@@ -26,8 +26,16 @@ namespace _4_004_PreparazioneAllaVerifica
         {
             get => txtValue;
             set {
-                txtValue = value;
-                txtStringaFiglia.Text = txtValue;
+                if (!string.IsNullOrEmpty(value))
+                {
+                    txtValue = value;
+                    txtStringaFiglia.Text = txtValue;
+                }
+                else
+                {
+                    throw new Exception("Compilare il campo");
+                }
+
             }
         }
 

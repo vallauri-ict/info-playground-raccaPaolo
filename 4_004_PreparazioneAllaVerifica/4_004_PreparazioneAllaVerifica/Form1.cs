@@ -99,7 +99,14 @@ namespace _4_004_PreparazioneAllaVerifica
 
         private void btnInviaStringa_Click(object sender, EventArgs e)
         {
-            ff.TxtValue = txtStringa.Text;//richiama il set di TxtValue
+            try
+            {
+                ff.TxtValue = txtStringa.Text;//richiama il set di TxtValue
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void toolStripMenuItem1_Click(object sender, EventArgs e)

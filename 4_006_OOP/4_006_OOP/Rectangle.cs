@@ -11,13 +11,21 @@ namespace _4_006_OOP
     {
         private int side1, side2;//se private non accessibile se non dall'interno della classe o con proprietà
         public Color colore;
-
-        public Rectangle()//genero costruttore che verrà richiamato, assegnando side 1 e side2
+        public string descrizione;
+        public Rectangle():this(1)//genero costruttore che verrà richiamato, assegnando side 1 e side2
         {
+            descrizione = "Sono un rettangolo";
             /*side1 = 1;
             side2 = 1;*/
         }
         //OVERLOAD dei costruttori in base ai parametri
+
+        public Rectangle(int l) : this(l, l)
+        {
+
+        }
+
+
         public Rectangle(int b, int h)//genero costruttore che verrà richiamato, assegnando side 1 e side2
         {
             side1 = b;

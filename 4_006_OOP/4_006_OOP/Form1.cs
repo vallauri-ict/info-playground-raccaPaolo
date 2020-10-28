@@ -35,6 +35,26 @@ namespace _4_006_OOP
             MessageBox.Show(r.getSide());
             Rectangle r1 = new Rectangle(Convert.ToInt32(txtBase.Text), Convert.ToInt32(txtAltezza.Text));
             MessageBox.Show(r1.getSide());
+
+            r = new Rectangle(4);
+            r.colore = Color.White;
+
+        }
+
+        private void btnCreaFattura_Click(object sender, EventArgs e)
+        {
+            Fattura f = new Fattura();
+            MessageBox.Show("Fattura creata!");
+        }
+
+        private void btnNFattura_Click(object sender, EventArgs e)
+        {
+            Fattura.visualizza();
+        }
+
+        private void btnClasseStatica_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Pi greco: "+MiaMath.pi+"\n3*4 ="+MiaMath.prodotto(3,4));
         }
     }
 }
