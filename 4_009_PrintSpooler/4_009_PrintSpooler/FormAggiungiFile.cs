@@ -41,5 +41,10 @@ namespace _4_009_PrintSpooler
             }
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Operazione annullata");
+            this.Close();
+        }
     }
 }
