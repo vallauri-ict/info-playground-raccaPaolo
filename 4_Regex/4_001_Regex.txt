@@ -4,5 +4,5 @@ Targa (non ottimizzata): ([A-Z]){2}\d{3}([A-Z]){2})
 Targa (lettere maiusc e min): (([A-Z]|[a-z]){2}\d{3}([A-Z]|[a-z]){2})
 
 Password (8 caratteri letterali, 3 cifre, termina con ? o * o -): (([A-Z]|[a-z]){8}\d{3}([?,*,-])) o (([A-Z,a-z]){8}\d{3}([?,*,-]))
-
+Correzione: ^[A-Z,a-z]{8}\d{3}[?*-]$ //utilizzo ^ per controllare che inizi cosi la stringa e $ per controllare che termini cosi
 
