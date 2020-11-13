@@ -40,7 +40,7 @@ namespace _4_011_FormRegistrazione
             Regex regCap = new Regex(@"^\d{5}$");
             controllaTxt(txtCap, regCap, ref valido);
             //mail
-            Regex regMail = new Regex(@"^[A-Za-z,\-,_,.,\d]+@{1}[A-Za-z,\d]+\.+[A-Za-z]{2,4}$");
+            Regex regMail = new Regex(@"^[A-Za-z,\-,_,.,\d]+@{1}[A-Za-z,\d]+\.[A-Za-z]{2,4}$");
             controllaTxt(txtMail, regMail, ref valido);
 
             Regex regUser = new Regex(@"^[A-Za-z,\d,\-,_,.]+$");
