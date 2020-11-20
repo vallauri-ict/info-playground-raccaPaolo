@@ -12,12 +12,19 @@ namespace _4_015_EsQueue
 {
     public partial class FormMain : Form
     {
+        //volendo temp random 
+        /*
+        const int MINTEMP= 35;
+        const int MAXTEMP= 41;
+        */
+        Random rnd = new Random();
         public static Dictionary<string, Queue<Paziente>> code = new Dictionary<string, Queue<Paziente>>();
         public struct Paziente
         {
             public string nome;
             public int eta;
             public string colore;
+            public int temp;
         }
         public Queue<Paziente> Rosso = new Queue<Paziente>();
         public Queue<Paziente> Giallo = new Queue<Paziente>();
@@ -54,19 +61,28 @@ namespace _4_015_EsQueue
                 {
                     error = true;
                 }
+                else if (numTemp.Value<34&&numTemp.Value>43)
+                {
+                    error = true;
+                }
                 else
                 {
                     Paziente p;
                     p.nome = txtCognome.Text + " " + txtNome.Text;
                     p.eta = Convert.ToInt32(numEta.Value);
                     p.colore = cmbColore.SelectedItem.ToString();
+                    //p.temp = rnd.Next(MINTEMP, MAXTEMP);
+                    p.temp = Convert.ToInt32(numTemp.Value);
                     code[p.colore.ToLower()].Enqueue(p);
                     MessageBox.Show("Paziente inserito");
                     foreach (var item in Controls.OfType<TextBox>())
                     {
                         item.Text = "";
                     }
-                    numEta.Value=0;
+                    foreach (var item in Controls.OfType<NumericUpDown>())
+                    {
+                        item.Value = 0;
+                    }
                     cmbColore.SelectedIndex = -1;
                 }  
             }
@@ -74,6 +90,39 @@ namespace _4_015_EsQueue
             {
                 MessageBox.Show("Inserire correttamente i dati");
             }
+        }
+
+        private void btnMassima_Click(object sender, EventArgs e)
+        {
+            //potrei cercare modo con findall
+            int max=-1;
+            foreach (var item in code)
+            {
+                foreach (var paz in item.Value)
+                {
+                    if (paz.temp>max)
+                    {
+                        max = paz.temp;
+                    }
+                }
+            }
+            MessageBox.Show("Temperatura massima giornaliera: "+max.ToString());
+        }
+
+        private void btnMinima_Click(object sender, EventArgs e)
+        {
+            int min = 50;
+            foreach (var item in code)
+            {
+                foreach (var paz in item.Value)
+                {
+                    if (paz.temp < min)
+                    {
+                        min = paz.temp;
+                    }
+                }
+            }
+            MessageBox.Show("Temperatura minima giornaliera:" +min.ToString());
         }
     }
 }

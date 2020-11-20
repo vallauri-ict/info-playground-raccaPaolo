@@ -54,7 +54,7 @@ namespace _4_015_EsQueue
             }
             else
             {
-                MessageBox.Show(aus.nome+": "+aus.eta+"\n"+aus.colore.ToUpper(),aus.nome);
+                MessageBox.Show(aus.nome+": "+aus.eta+"\n"+aus.colore.ToUpper()+"\nTemperatura: "+aus.temp.ToString(),aus.nome);
             }
             
         }

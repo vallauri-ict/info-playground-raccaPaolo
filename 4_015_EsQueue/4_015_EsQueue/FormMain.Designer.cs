@@ -37,7 +37,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.cmbColore = new System.Windows.Forms.ComboBox();
             this.btnInserisciPaziente = new System.Windows.Forms.Button();
+            this.btnMassima = new System.Windows.Forms.Button();
+            this.btnMinima = new System.Windows.Forms.Button();
+            this.numTemp = new System.Windows.Forms.NumericUpDown();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numEta)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numTemp)).BeginInit();
             this.SuspendLayout();
             // 
             // txtNome
@@ -75,7 +80,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 78);
+            this.label3.Location = new System.Drawing.Point(13, 72);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(23, 13);
             this.label3.TabIndex = 4;
@@ -120,11 +125,51 @@
             this.btnInserisciPaziente.UseVisualStyleBackColor = true;
             this.btnInserisciPaziente.Click += new System.EventHandler(this.btnInserisciPaziente_Click);
             // 
-            // Form1
+            // btnMassima
+            // 
+            this.btnMassima.Location = new System.Drawing.Point(72, 180);
+            this.btnMassima.Name = "btnMassima";
+            this.btnMassima.Size = new System.Drawing.Size(164, 23);
+            this.btnMassima.TabIndex = 9;
+            this.btnMassima.Text = "Temperatura massima";
+            this.btnMassima.UseVisualStyleBackColor = true;
+            this.btnMassima.Click += new System.EventHandler(this.btnMassima_Click);
+            // 
+            // btnMinima
+            // 
+            this.btnMinima.Location = new System.Drawing.Point(252, 180);
+            this.btnMinima.Name = "btnMinima";
+            this.btnMinima.Size = new System.Drawing.Size(164, 23);
+            this.btnMinima.TabIndex = 10;
+            this.btnMinima.Text = "Temperatura minima";
+            this.btnMinima.UseVisualStyleBackColor = true;
+            this.btnMinima.Click += new System.EventHandler(this.btnMinima_Click);
+            // 
+            // numTemp
+            // 
+            this.numTemp.Location = new System.Drawing.Point(293, 16);
+            this.numTemp.Name = "numTemp";
+            this.numTemp.Size = new System.Drawing.Size(100, 20);
+            this.numTemp.TabIndex = 12;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(216, 18);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(67, 13);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Temperatura";
+            // 
+            // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.numTemp);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.btnMinima);
+            this.Controls.Add(this.btnMassima);
             this.Controls.Add(this.btnInserisciPaziente);
             this.Controls.Add(this.cmbColore);
             this.Controls.Add(this.label4);
@@ -134,10 +179,11 @@
             this.Controls.Add(this.txtCognome);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtNome);
-            this.Name = "Form1";
+            this.Name = "FormMain";
             this.Text = "InserisciPaziente";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numEta)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numTemp)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -154,6 +200,10 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cmbColore;
         private System.Windows.Forms.Button btnInserisciPaziente;
+        private System.Windows.Forms.Button btnMassima;
+        private System.Windows.Forms.Button btnMinima;
+        private System.Windows.Forms.NumericUpDown numTemp;
+        private System.Windows.Forms.Label label5;
     }
 }
 
