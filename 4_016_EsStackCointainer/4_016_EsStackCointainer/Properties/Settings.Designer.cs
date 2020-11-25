@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace _4_016_EsStackCointainer.Properties
+namespace _4_016_EsStackContainer.Properties
 {
 
 
