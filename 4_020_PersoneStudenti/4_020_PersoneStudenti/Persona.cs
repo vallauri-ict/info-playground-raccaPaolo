@@ -19,11 +19,10 @@ namespace _4_020_PersoneStudenti
             }
             else
             {
-                GetAttributes(out nome, out cognome, out sesso, out eta);
-                /*nome = GetNome();
-                cognome = GetCognome();
-                sesso = GetSesso();
-                eta = GetEta();*/
+                this.nome = nome;
+                this.cognome = cognome;
+                this.sesso = sesso;
+                this.eta = eta;
             }
         }
 
