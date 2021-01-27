@@ -16,5 +16,6 @@ namespace _4_026_EsercizioStagisti
         {
             InitializeComponent();
         }
+
     }
 }
