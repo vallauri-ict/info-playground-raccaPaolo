@@ -41,19 +41,19 @@ namespace _4_026_EsercizioStagisti
             this.label5 = new System.Windows.Forms.Label();
             this.cmbSpec = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbAzienda = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.numOre = new System.Windows.Forms.NumericUpDown();
             this.btnInserisci = new System.Windows.Forms.Button();
             this.btnRicerca = new System.Windows.Forms.Button();
-            this.dgvStagisti = new System.Windows.Forms.DataGridView();
             this.btnElimina = new System.Windows.Forms.Button();
             this.numPosElimina = new System.Windows.Forms.NumericUpDown();
             this.label9 = new System.Windows.Forms.Label();
+            this.dgvStagisti = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.numOre)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvStagisti)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numPosElimina)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStagisti)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -171,18 +171,18 @@ namespace _4_026_EsercizioStagisti
             this.label6.TabIndex = 10;
             this.label6.Text = "Spec";
             // 
-            // comboBox1
+            // cmbAzienda
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbAzienda.FormattingEnabled = true;
+            this.cmbAzienda.Items.AddRange(new object[] {
             "AZIENDA1",
             "AZIENDA2",
             "AZIENDA3",
             "AZIENDA4"});
-            this.comboBox1.Location = new System.Drawing.Point(65, 109);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(100, 21);
-            this.comboBox1.TabIndex = 13;
+            this.cmbAzienda.Location = new System.Drawing.Point(65, 109);
+            this.cmbAzienda.Name = "cmbAzienda";
+            this.cmbAzienda.Size = new System.Drawing.Size(100, 21);
+            this.cmbAzienda.TabIndex = 13;
             // 
             // label7
             // 
@@ -217,6 +217,7 @@ namespace _4_026_EsercizioStagisti
             this.btnInserisci.TabIndex = 16;
             this.btnInserisci.Text = "Inserisci";
             this.btnInserisci.UseVisualStyleBackColor = true;
+            this.btnInserisci.Click += new System.EventHandler(this.btnInserisci_Click);
             // 
             // btnRicerca
             // 
@@ -226,14 +227,7 @@ namespace _4_026_EsercizioStagisti
             this.btnRicerca.TabIndex = 17;
             this.btnRicerca.Text = "Ricerca Azienda";
             this.btnRicerca.UseVisualStyleBackColor = true;
-            // 
-            // dgvStagisti
-            // 
-            this.dgvStagisti.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvStagisti.Location = new System.Drawing.Point(368, 10);
-            this.dgvStagisti.Name = "dgvStagisti";
-            this.dgvStagisti.Size = new System.Drawing.Size(429, 256);
-            this.dgvStagisti.TabIndex = 18;
+            this.btnRicerca.Click += new System.EventHandler(this.btnRicerca_Click);
             // 
             // btnElimina
             // 
@@ -261,6 +255,14 @@ namespace _4_026_EsercizioStagisti
             this.label9.TabIndex = 20;
             this.label9.Text = "Posizione";
             // 
+            // dgvStagisti
+            // 
+            this.dgvStagisti.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvStagisti.Location = new System.Drawing.Point(368, 10);
+            this.dgvStagisti.Name = "dgvStagisti";
+            this.dgvStagisti.Size = new System.Drawing.Size(429, 256);
+            this.dgvStagisti.TabIndex = 18;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -274,7 +276,7 @@ namespace _4_026_EsercizioStagisti
             this.Controls.Add(this.btnInserisci);
             this.Controls.Add(this.numOre);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbAzienda);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.cmbSpec);
             this.Controls.Add(this.label6);
@@ -290,9 +292,10 @@ namespace _4_026_EsercizioStagisti
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numOre)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvStagisti)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numPosElimina)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStagisti)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -312,16 +315,16 @@ namespace _4_026_EsercizioStagisti
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cmbSpec;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbAzienda;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.NumericUpDown numOre;
         private System.Windows.Forms.Button btnInserisci;
         private System.Windows.Forms.Button btnRicerca;
-        private System.Windows.Forms.DataGridView dgvStagisti;
         private System.Windows.Forms.Button btnElimina;
         private System.Windows.Forms.NumericUpDown numPosElimina;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.DataGridView dgvStagisti;
     }
 }
 

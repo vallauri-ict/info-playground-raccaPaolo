@@ -20,12 +20,16 @@ namespace _4_026_EsercizioStagisti
         protected char Sezione { get => sezione; set => sezione = Convert.ToChar(value); }
         protected string Specializzazione { get => specializzazione; set => specializzazione = value; }
         #endregion
-        public ClsAlunno(string nome, string cognome, string citta) : base(nome, cognome, citta)
+        public ClsAlunno(string nome, string cognome, string citta, int classe, string sezione, string specializzazione) : base(nome, cognome, citta)
         {
-            //todo da finire
+            Classe = Convert.ToChar(classe);
+            Specializzazione = specializzazione;
+            Sezione = Convert.ToChar(sezione);
+            progressivo++;
+            matricola = "A" + progressivo.ToString().PadLeft(5, '0');
         }
         public override string Visualizza() {
-            return null;//todo da fare
+            return $"{Nome} {Cognome} {Citta} {Classe} {Sezione} {Specializzazione}";
         }
     }
 }
