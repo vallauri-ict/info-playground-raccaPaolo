@@ -238,6 +238,7 @@ namespace _4_026_EsercizioStagisti
             this.btnElimina.TabIndex = 19;
             this.btnElimina.Text = "Elimina";
             this.btnElimina.UseVisualStyleBackColor = true;
+            this.btnElimina.Click += new System.EventHandler(this.btnElimina_Click);
             // 
             // numPosElimina
             // 

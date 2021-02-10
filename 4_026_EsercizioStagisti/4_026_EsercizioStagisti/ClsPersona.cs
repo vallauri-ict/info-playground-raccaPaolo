@@ -24,7 +24,7 @@ namespace _4_026_EsercizioStagisti
             {
                 if (value.Trim().Length >= 2)
                 {
-                    citta = value;
+                    nome = value;
                 }
                 else
                 {
@@ -36,7 +36,7 @@ namespace _4_026_EsercizioStagisti
             {
                 if (value.Trim().Length >= 2)
                 {
-                    citta = value;
+                    cognome = value;
                 }
                 else
                 {

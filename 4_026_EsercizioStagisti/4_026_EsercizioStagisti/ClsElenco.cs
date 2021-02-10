@@ -64,7 +64,7 @@ namespace _4_026_EsercizioStagisti
         /// Rimuove l'elemento nella posizione passata come parametro
         /// </summary>
         /// <param name="posizione">La posizione dell'elemento da eliminare</param>
-        private void Cancella(int posizione)
+        public void Cancella(int posizione)
         {
             posizione--;
             if (elenco.Count == 0)

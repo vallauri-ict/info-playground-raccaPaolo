@@ -71,5 +71,28 @@ namespace _4_026_EsercizioStagisti
                 MessageBox.Show($"Gli stagisti non hanno effettuato ore in {azienda}", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void btnElimina_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                if (numPosElimina.Value == 0)
+                {
+                    elencoStudenti.Cancella();
+                }
+                else
+                {
+                    elencoStudenti.Cancella(Convert.ToInt32(numPosElimina.Value));
+                }
+                MessageBox.Show("Cancellato");
+                elencoStudenti.VisualizzaDgv(dgvStagisti);
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
