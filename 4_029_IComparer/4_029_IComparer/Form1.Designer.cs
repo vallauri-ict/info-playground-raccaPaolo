@@ -29,13 +29,47 @@ namespace _4_029_IComparer
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.BtnOrdinaCognomeBtnOrdinaCognome = new System.Windows.Forms.Button();
+            this.BtnOrdinaNome = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // BtnOrdinaCognomeBtnOrdinaCognome
+            // 
+            this.BtnOrdinaCognomeBtnOrdinaCognome.Location = new System.Drawing.Point(13, 13);
+            this.BtnOrdinaCognomeBtnOrdinaCognome.Name = "BtnOrdinaCognomeBtnOrdinaCognome";
+            this.BtnOrdinaCognomeBtnOrdinaCognome.Size = new System.Drawing.Size(134, 23);
+            this.BtnOrdinaCognomeBtnOrdinaCognome.TabIndex = 0;
+            this.BtnOrdinaCognomeBtnOrdinaCognome.Text = "Ordina per cognome";
+            this.BtnOrdinaCognomeBtnOrdinaCognome.UseVisualStyleBackColor = true;
+            this.BtnOrdinaCognomeBtnOrdinaCognome.Click += new System.EventHandler(this.BtnOrdinaCognomeBtnOrdinaCognome_Click);
+            // 
+            // BtnOrdinaNome
+            // 
+            this.BtnOrdinaNome.Location = new System.Drawing.Point(12, 42);
+            this.BtnOrdinaNome.Name = "BtnOrdinaNome";
+            this.BtnOrdinaNome.Size = new System.Drawing.Size(134, 23);
+            this.BtnOrdinaNome.TabIndex = 1;
+            this.BtnOrdinaNome.Text = "Ordina per nome";
+            this.BtnOrdinaNome.UseVisualStyleBackColor = true;
+            this.BtnOrdinaNome.Click += new System.EventHandler(this.BtnOrdinaNome_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(205, 86);
+            this.Controls.Add(this.BtnOrdinaNome);
+            this.Controls.Add(this.BtnOrdinaCognomeBtnOrdinaCognome);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button BtnOrdinaCognomeBtnOrdinaCognome;
+        private System.Windows.Forms.Button BtnOrdinaNome;
     }
 }
 
