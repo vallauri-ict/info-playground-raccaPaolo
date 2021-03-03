@@ -1,5 +1,5 @@
 ﻿
-namespace _4_03_UserControl
+namespace _4_033_UserControl
 {
     partial class UserControlTextBox
     {
@@ -34,12 +34,10 @@ namespace _4_03_UserControl
             // 
             // txtTesto
             // 
-            this.txtTesto.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtTesto.Location = new System.Drawing.Point(0, 0);
             this.txtTesto.Name = "txtTesto";
-            this.txtTesto.Size = new System.Drawing.Size(152, 20);
+            this.txtTesto.Size = new System.Drawing.Size(149, 20);
             this.txtTesto.TabIndex = 0;
-            this.txtTesto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtTesto_KeyPress);
             // 
             // UserControlTextBox
             // 
@@ -47,7 +45,7 @@ namespace _4_03_UserControl
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.txtTesto);
             this.Name = "UserControlTextBox";
-            this.Size = new System.Drawing.Size(152, 20);
+            this.Size = new System.Drawing.Size(149, 20);
             this.ResumeLayout(false);
             this.PerformLayout();
 

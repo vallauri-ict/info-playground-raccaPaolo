@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace _4_03_UserControl
+namespace _4_033_UserControl
 {
     public partial class UserControlTextBox : UserControl
     {
@@ -10,22 +10,26 @@ namespace _4_03_UserControl
         private int cifreDecimali = 0;//contiene il numero di cifre decimali (dopo la virgola)
 
         public bool Numero { get => numero; set => numero = value; }
-        public string Testo { get => testo=txtTesto.Text; set
+        public string Testo
+        {
+            get => testo = txtTesto.Text; set
             {
                 testo = value;
                 txtTesto.Text = testo;
             }
         }
-        public int CifreDecimali { get => cifreDecimali; set 
-            { 
+        public int CifreDecimali
+        {
+            get => cifreDecimali; set
+            {
                 cifreDecimali = value;
                 ReimpostaTesto();
-            } 
+            }
         }
 
         private void ReimpostaTesto()
         {
-            if (numero&& Testo!="")
+            if (numero && Testo != "")
             {
                 try
                 {
@@ -54,7 +58,7 @@ namespace _4_03_UserControl
             for (int i = 0; i < text.Length; i++)
             {
                 char c = Convert.ToChar(text[i]);
-                if (c==',')
+                if (c == ',')
                 {
                     cont++;
                 }
