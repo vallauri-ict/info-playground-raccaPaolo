@@ -1,10 +1,21 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Drawing;
+using System.Data;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace _4_033_UserControl
+namespace _4_034_UserControl
 {
-    public partial class UserControlTextBox : UserControl
+    public partial class UserControl: System.Windows.Forms.UserControl
     {
+        public UserControl()
+        {
+            InitializeComponent();
+        }
         private bool numero = false;    //se true la txt accetta solo numeri
         private string testo; //testo della txt
         private int cifreDecimali = 0;//contiene il numero di cifre decimali (dopo la virgola)
@@ -66,10 +77,6 @@ namespace _4_033_UserControl
             return cont > 1;
         }
 
-        public UserControlTextBox()
-        {
-            InitializeComponent();
-        }
         /*private void TxtTesto_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (numero)
@@ -86,9 +93,20 @@ namespace _4_033_UserControl
             Testo = "";
         }
 
-        private void TxtTesto_KeyPress(object sender, KeyPressEventArgs e)
+        private void OnKeyPress(object sender, KeyPressEventArgs e)
         {
-
+            if (Numero)
+            {
+                if (!(char.IsDigit(e.KeyChar) || (e.KeyChar) == ',' || char.IsControl(e.KeyChar)))
+                {
+                    e.Handled = true;
+                    //throw new Exception();
+                }
+            }
+        }
+        private void OnLeave(object sender, EventArgs e)
+        {
+            ReimpostaTesto();
         }
     }
 }
